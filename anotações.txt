@@ -1,0 +1,56 @@
+- não confundir head com header
+	head: configurações da página
+	header: cabeçalho da página
+
+- origamid flexbox: 
+	como nessa aula teve muita informação, é importante ressaltar que esse site é meio que uma "referência" para o que foi explicado hoje!
+- float não é usado, está fora do padrão (há mais de 10 anos)
+
+- site responsivo -> os elementos(tags) a página se adapta conforme a resolução
+
+	* se NÃO for responsivo nem indexa no google
+- display:flex; > propriedades automáticas: 
+	flex-direction -> row = alinhada e column = um em baixo do outro
+		row-reverse e column reverse -> inverte a ordem dos elementos
+	flex-wrap elemento quebrar na linha conforme necessário (responsivo)
+		* wrap --> deixa responsivo
+		* nowrap --> não quebra automático
+- justify-content
+
+	.flex-start {
+	justify-content: flex-start; <- "gruda" na esquerda (padrão)
+	}
+
+	.flex-end {
+	justify-content: flex-end; <-"gruda" na direita
+	}
+
+	.center {
+	justify-content: center; <- centraliza
+	}
+
+	.space-between {
+	justify-content: space-between;
+	}
+
+	.space-around {
+	justify-content: space-around;
+	}	
+
+https://fontawesome.com/
+https://ionic.io/ionicons
+
+script sempre no antes do </body>, pois se houver erro não tem o risco de interromper o carregamento
+
+nav é o menu principal
+
+# no <a href="#"> serve para quando o link estiver vazio
+
+o seletor *{} serve para fazer altereções na página
+
+padding serve para espaçar os elementos dentro da div
+	> padding: 10px, 10px, 10px, 10px; em cima, direita, baixo, esquerda, respectivamente
+
+margin é o oposto, ele isola a div EXTERNAMENTE do resto da página.
+
+procentagem % e em são unidades de medida RELATIVAS
