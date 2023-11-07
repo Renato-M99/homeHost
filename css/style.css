@@ -23,5 +23,58 @@ p {
     background-color: #232A31;
     padding: 0 2em;
     /*em vai multiplicar o tamanho especificado na classe pai*/
+    box-sizing: border-box;
+    /* IMPEDE que a propriedade padding faça o elemento crescer de tamanho. Exemplo: se um padding for usado em um elemento de 200px de altura  e 200px de largura ele irá faer o elemento ter 220px de largura por 220px de altura. Quando usamos o box-sizing:border-box esse aumento de tamanho não irá acontecer, pois e o espaço do padding será "descontado" do elemento pai.*/
+    position:relative; 
+
 }
 
+nav{
+    position: relative;
+}
+.navbar-items{
+    position: absolute;
+    list-style:none;/*estilos de marcadores para lista*/
+    display: inline-block;
+    /*display: altera o comportamento dos elementos na tela. Ex: converte um elemento de bloco para elemento de linha, e também, permite definir um elemento como flexível usando display:flex.*/
+    margin: 0;
+    right: 0;/*pra imagem "colar no lado direito", coloca-se 0*/
+    height: 80px;
+    /*line-height= */
+    line-height: 80px;
+   
+
+}
+ .default-btn{
+    background-color: rgb(45, 212, 81);
+    padding: 15px 20px;
+    border-radius: 5px;
+    /*arredonda os elementos*/
+    } 
+
+.navbar-items li{
+    display: inline-block;
+    text-transform: uppercase;
+    margin-left: 25px;
+}
+.logo{
+    width: 50px;
+    margin-top: 15px;
+}
+.navbar-items li a{
+    color: #fff;
+    text-decoration: none;
+    transition: .5s;
+}
+/*Hover= representa o passar do mouse no elemento*/
+.navbar-items li a:hover{
+    color: #ccc;
+
+}
+.main-banner{
+   background-image: url('../img/mainbanner.png');
+   background-position: center;/**/
+   background-size: cover;
+   background-repeat: no-repeat;
+   padding: 10em 0;
+}
